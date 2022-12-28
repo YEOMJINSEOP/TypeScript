@@ -2,8 +2,6 @@
   /**
    *  Union Types: OR
    */
-  // 활용도가 높다.
-  // 발생할 수 있는 case 중에 하나만 할당할 경우에 쓰면 좋다.
   type Direction = 'left' | 'right' | 'up' | 'down';
   function move(direction: Direction) {
     console.log(direction);
@@ -25,7 +23,6 @@
   type LoginState = SuccessState | FailState;
 
   function login(): LoginState {
-    // 로그인이 성공했다고 치면,
     return {
       response: {
         body: 'logged in!',
