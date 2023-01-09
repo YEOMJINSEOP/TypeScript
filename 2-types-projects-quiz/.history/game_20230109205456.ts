@@ -17,18 +17,18 @@ function move(action:Action){
   switch(action){
     case 'up':
       position.y += 1;
-      break;
+    
     case 'down':
       position.y -= 1;
-      break;
+    
     case 'left':
       position.x -= 1;
-      break;
+    
     case 'right':
       position.x += 1;
-      break;
+    
     default:
-      throw Error('undefined action');
+      throw new Error('undefined action');
   }
 }
 console.log(position); // { x: 0, y: 0}

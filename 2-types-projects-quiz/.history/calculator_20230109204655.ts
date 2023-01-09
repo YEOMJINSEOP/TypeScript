@@ -14,8 +14,8 @@ function calculate(action:action, num1:number, num2:number){
       return num1 / num2;
     case 'remainder':
       return num1 % num2;
-    default:
-      throw Error('unknown action');
+      default:
+        throw Error('unknown action');
   }
 }
 console.log(calculate('add', 1, 3)); // 4
